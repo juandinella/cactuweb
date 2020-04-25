@@ -1,0 +1,31 @@
+.product-list {
+  max-width: rem(1140);
+  margin: 0 auto;
+
+  &--container {
+    overflow: hidden;
+  }
+
+  &--header {
+    margin-bottom: rem(14);
+  }
+
+  &--section {
+    flex-grow: 1;
+    padding: 0 0 55px rem(24);
+    margin-bottom: -10px;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.ver-todos {
+  color: $color-primary;
+  position: relative;
+  right: -15px;
+  font-weight: $f-demi;
+
+  span {
+    margin-right: rem(4);
+  }
+}

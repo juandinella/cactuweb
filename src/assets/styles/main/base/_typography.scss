@@ -4,7 +4,7 @@ html {
   font-family: $system-fonts;
   color: $black;
 
-  &.wf-active {
+  &.avenir-loaded {
     font-family: $font;
   }
 }
@@ -20,23 +20,13 @@ textarea {
   font-family: inherit;
 }
 
-::-webkit-input-placeholder {
-  color: #242424;
-  opacity: 0.5;
-  font-size: rem(16);
+.title-l {
+  font-size: 24px;
+  font-weight: $f-bold;
 }
-::-moz-placeholder {
-  color: #242424;
-  opacity: 0.5;
-  font-size: rem(16);
-}
-:-ms-input-placeholder {
-  color: #242424;
-  opacity: 0.5;
-  font-size: rem(16);
-}
-:-moz-placeholder {
-  color: #242424;
-  opacity: 0.5;
-  font-size: rem(16);
+
+.title-m {
+  font-size: rem(18);
+  line-height: 1.5;
+  font-weight: $f-bold;
 }

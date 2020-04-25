@@ -1,6 +1,13 @@
 extends layouts/layout-primary
 
 block content
-  section.delete-all-of-this-to-begin
-    h1 name - Screen 1
-    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate expedita necessitatibus, architecto saepe delectus non aspernatur dolorem eaque consequatur tempore soluta quidem asperiores culpa voluptates accusantium, eos quasi officiis suscipit!
+  include layouts/general/header
+  include layouts/general/search
+  include layouts/general/filters
+  include layouts/home/prendedores-imanes
+  include layouts/home/laminas
+  //- include layouts/home/laminas
+  //- include layouts/home/stickers
+
+  include layouts/general/menu
+  .overlay

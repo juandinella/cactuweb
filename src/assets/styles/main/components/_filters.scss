@@ -1,0 +1,49 @@
+.filters {
+  margin: 0 auto rem(30) auto;
+  max-width: rem(1140);
+
+  &--container {
+    overflow: hidden;
+  }
+
+  h3 {
+    padding-left: rem(24);
+  }
+
+  &--list {
+    margin-top: rem(14);
+    flex-grow: 1;
+    padding: 0 0 15px 24px;
+    margin-bottom: -10px;
+    overflow: scroll;
+    line-height: 30px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  &--item {
+    background-color: $gray-100;
+    border-radius: rem(16);
+    font-size: rem(13);
+    line-height: 1;
+    color: $gray-400;
+    font-weight: $f-demi;
+    margin-right: rem(8);
+    white-space: nowrap;
+    padding: rem(8) rem(12);
+
+    svg {
+      display: none;
+      min-width: rem(16);
+      margin-right: rem(5);
+    }
+
+    &.is-active {
+      background-color: #e8fcf7;
+      color: #199e7a;
+
+      svg {
+        display: block;
+      }
+    }
+  }
+}

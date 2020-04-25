@@ -1,7 +1,15 @@
-import colors from './colors'
+import menu from './menu'
+import asyncFonts from '../tools/async-fonts';
+import lazyImages from './lazyImages';
 
 const general = () => {
-  colors()
+  lazyImages();
+  menu()
+
+  asyncFonts({
+    href: 'assets/css/fonts.css',
+    observer: 'avenir',
+  });
 }
 
 export default general

@@ -24,4 +24,15 @@ gulp.task('vendor:styles', () =>
     .pipe(gulp.dest(config.directories.dist.styles))
 )
 
-gulp.task('styles', gulp.series('main:styles', 'vendor:styles'))
+gulp.task('font:styles', () =>
+  gulp.src(config.project.cssFontFile)
+    .pipe(styles({
+      modules: false,
+      name: 'fonts.css',
+      production: config.production
+    })())
+    .on('error', config.onError)
+    .pipe(gulp.dest(config.directories.dist.styles))
+)
+
+gulp.task('styles', gulp.series('main:styles', 'vendor:styles', 'font:styles'))
