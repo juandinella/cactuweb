@@ -1,3 +1,14 @@
 .header {
   padding: rem(20) 0;
+
+  &--menu {
+    li {
+      margin-left: rem(24);
+    }
+
+    &_item {
+      color: $black;
+      font-weight: $f-demi;
+    }
+  }
 }

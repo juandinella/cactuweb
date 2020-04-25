@@ -3,4 +3,7 @@ header.header
     .row
       .col-md-12.flex.align-center.justify-between
         a(href="/"): +svg('logo')
-        button.menu-toggle: +svg('menu')
+        ul.header--menu.flex-sm.dn
+          li: a.header--menu_item(href="") Inicio
+          li: a.header--menu_item(href="") Sobre mi
+        button.db.dn-sm.menu-toggle: +svg('menu')
