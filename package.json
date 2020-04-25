@@ -1,0 +1,38 @@
+{
+  "name": "Penny",
+  "description": "Penny Boilerplate",
+  "version": "1.5.3",
+  "repository": "https://www.juandinella.com",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm install",
+    "code": "gulp",
+    "build": "gulp build --prod",
+    "release": "gulp release --prod",
+    "lint:js": "eslint 'src/**/*.js'",
+    "fix:js": "eslint 'src/**/*.js' --fix",
+    "lint:scss": "stylelint 'src/**/*.scss'",
+    "lint": "npm run lint:js; npm run lint:scss",
+    "debug": "gulp scripts --debug"
+  },
+  "dependencies": {
+    "@juandinella/penny-pipes": "*",
+    "@juandinella/penny-scripts": "*",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-zip": "^5.0.1",
+    "yargs": "^15.0.2"
+  },
+  "devDependencies": {
+    "@juandinella/stylelint-config": "*",
+    "browser-sync": "^2.26.7",
+    "react-dev-utils": "^10.0.0",
+    "stylelint": "^12.0.1"
+  },
+  "stylelint": {
+    "extends": "@juandinella/stylelint-config"
+  },
+  "eslintConfig": {
+    "extends": "@juandinella/eslint-config"
+  }
+}
