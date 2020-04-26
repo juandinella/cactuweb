@@ -3,3 +3,11 @@ mixin svg(filename)
 
 mixin img(name, alt)
   img(src=`assets/images/${name}` alt= alt ? alt : 'An image')
+
+mixin card(title, price, href, image, filter)
+  a.card&attributes(filter)(href=href)
+    .card--inside
+      .card--bg(style="background-image: url(assets/images/"+image+")")
+      .card--content.flex.align-center.justify-between
+        h4.card--title=title
+        h5.card--price=price

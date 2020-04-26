@@ -1,0 +1,48 @@
+.faqs {
+  margin-top: rem(40);
+
+  &--header {
+    margin-bottom: rem(50);
+  }
+
+  [data-accordion] {
+    background: $white;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.08),
+      0px 1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: rem(4);
+    padding: rem(15) rem(18);
+    margin-bottom: rem(20);
+
+    svg {
+      transition: transform 0.225s ease;
+      min-width: rem(18);
+    }
+
+    &.is-open {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    span {
+      color: $color-primary;
+      font-size: rem(16);
+      line-height: 1.5;
+      font-weight: $f-demi;
+    }
+  }
+  [data-trigger] {
+    width: 100%;
+  }
+}
+
+.faq-content {
+  margin-top: rem(20);
+
+  p {
+    font-size: rem(14);
+    line-height: 1.5;
+    color: $gray-400;
+    font-weight: $f-medium;
+  }
+}

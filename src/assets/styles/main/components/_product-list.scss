@@ -12,10 +12,14 @@
 
   &--section {
     flex-grow: 1;
-    padding: 0 0 55px rem(24);
+    padding: 0 0 rem(55) rem(24);
     margin-bottom: -10px;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
+
+    @include breakpoint(sm) {
+      padding: 0 0 rem(55) rem(40);
+    }
   }
 }
 
@@ -28,4 +32,8 @@
   span {
     margin-right: rem(4);
   }
+}
+
+.highlight {
+  outline: 1px solid red;
 }

@@ -1,11 +1,18 @@
 section.filters
   .filters--container
-    h3.title-m Filtros
+    .filters--title
+      h3.title-m Filtros
     ul.filters--list.flex
-      li.filters--item.flex.align-center.justify-center.is-active
+      li.filters--item.flex.align-center.justify-center.is-selected(data-filter='all')
         +svg('check')
         span Todos
-      li.filters--item.flex.align-center.justify-center Plantas exóticas
-      li.filters--item.flex.align-center.justify-center Fauna exótica
-      li.filters--item.flex.align-center.justify-center Plantas nativas
+      li.filters--item.flex.align-center.justify-center(data-filter='alf')
+        +svg('check')
+        span Plantas exóticas
+      li.filters--item.flex.align-center.justify-center(data-filter='culo')
+        +svg('check')
+        span Fauna exótica
+      li.filters--item.flex.align-center.justify-center(data-filter='caca')
+        +svg('check')
+        span Plantas nativas
 
