@@ -1,0 +1,24 @@
+.breadcrumbs {
+  margin-bottom: rem(25);
+
+  li {
+    margin-right: rem(10);
+    position: relative;
+    font-size: rem(14);
+
+    &:first-of-type {
+      &:after {
+        content: "/";
+        position: absolute;
+        right: 0;
+        top: rem(2);
+        color: $color-primary;
+      }
+    }
+
+    a {
+      color: $color-primary;
+      padding-right: rem(15);
+    }
+  }
+}

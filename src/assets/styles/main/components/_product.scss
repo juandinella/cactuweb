@@ -1,0 +1,33 @@
+.product {
+  padding-top: rem(20);
+  border-top: 1px solid $gray-200;
+
+  &--header {
+    margin-bottom: rem(25);
+
+    .title-l {
+      margin-bottom: rem(8);
+    }
+
+    .price {
+      font-size: rem(18);
+    }
+  }
+
+  &--description {
+    color: $gray-400;
+    font-weight: $f-medium;
+    font-size: rem(14);
+    line-height: 1.5;
+    margin-bottom: rem(25);
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: rem(15);
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

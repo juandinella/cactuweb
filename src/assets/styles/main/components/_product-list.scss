@@ -16,6 +16,13 @@
     margin-bottom: -10px;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
+    -webkit-mask-image: linear-gradient(
+      90deg,
+      transparent,
+      #000 10px,
+      #000 calc(100% - 10px),
+      transparent
+    );
 
     @include breakpoint(sm) {
       padding: 0 0 rem(55) rem(40);

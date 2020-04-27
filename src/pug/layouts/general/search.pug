@@ -2,6 +2,6 @@ section.search
   .container
     .row
       .col-md-12
-        form.relative.flex.align-center(action="")
+        form#search.relative.flex.align-center(action="")
           input.search--input(type="search", placeholder='Buscar')
-          .search--button.absolute.flex(type='submit'): +svg('search')
+          button.search--button.absolute.flex(type='submit'): +svg('search')

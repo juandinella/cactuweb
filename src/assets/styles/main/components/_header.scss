@@ -1,6 +1,10 @@
 .header {
   padding: rem(20) 0;
 
+  svg {
+    display: block;
+  }
+
   &--menu {
     li {
       margin-left: rem(24);

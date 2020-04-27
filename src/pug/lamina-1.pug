@@ -2,13 +2,20 @@ extends layouts/layout-primary
 
 block content
   include layouts/general/header
-  .container
-    .row
-      .col-md-12
-        ul.flex
-          li: a(href="") Láminas
-          li Lamina 1
-        p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod rem commodi deserunt earum doloremque quis. Nulla et quo quasi saepe labore optio deserunt aliquid, voluptatum pariatur modi facilis quidem assumenda?
+  section.product
+    .container
+      .row
+        .col-md-12
+          ul.flex.breadcrumbs
+            li: a(href="/laminas") Láminas
+            li Lamina 1
+          header.product--header
+            h1.title-l Lámina 1
+            h2.price $150
+          section.product--section
+            .product--description: p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, tempora. Quod, amet praesentium? Temporibus accusantium, unde eaque ad vitae consectetur error, obcaecati eligendi quo quia laborum aperiam corporis nam blanditiis!
+            +img('img.jpg')
+            +img('img.jpg')
 
 
   include layouts/general/menu

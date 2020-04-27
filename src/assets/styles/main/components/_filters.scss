@@ -42,9 +42,11 @@
     cursor: pointer;
 
     svg {
-      display: none;
-      min-width: rem(16);
+      opacity: 0;
+      visibility: hidden;
       margin-right: rem(5);
+      display: none;
+      transition: all 0.225s ease;
     }
 
     &.is-selected {
@@ -52,6 +54,8 @@
       color: #199e7a;
 
       svg {
+        opacity: 1;
+        visibility: visible;
         display: block;
       }
     }
