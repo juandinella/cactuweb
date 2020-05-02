@@ -14,7 +14,7 @@ const filters = () => {
     const all = document.querySelectorAll('.product-list--section .card');
     // If selecting filter "All", then show all items.
     if (this.dataset.filter === 'all') {
-      for (let j = 0; j < 10; j++) {
+      for (let j = 0; j < all.length; j++) {
         all[j].classList.remove('is-hidden');
       }
       // Otherwise, filter by the data-attribute of filter that is set.

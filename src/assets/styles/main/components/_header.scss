@@ -1,6 +1,10 @@
 .header {
   padding: rem(20) 0;
 
+  @include breakpoint(md) {
+    padding: rem(30) 0;
+  }
+
   svg {
     display: block;
   }
@@ -14,5 +18,15 @@
       color: $black;
       font-weight: $f-demi;
     }
+  }
+}
+
+.logo svg {
+  width: 100%;
+  height: 100%;
+
+  @include breakpoint(md) {
+    width: 125%;
+    height: 125%;
   }
 }
