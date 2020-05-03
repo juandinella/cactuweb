@@ -33,4 +33,10 @@ html(lang='en')
     if production
     script(src='assets/js/main.js')
     block scripts
-      //- Also if more scripts are needed you can hook in here <3
+      script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-40207909-2')
+      script.
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-40207909-2');
+

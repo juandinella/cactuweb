@@ -21,6 +21,7 @@
     "cheerio": "^1.0.0-rc.3",
     "del": "^5.1.0",
     "fontfaceobserver": "^2.1.0",
+    "glightbox": "^2.0.5",
     "gulp": "^4.0.2",
     "gulp-zip": "^5.0.1",
     "lazysizes": "^5.2.0",

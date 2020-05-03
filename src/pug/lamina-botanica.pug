@@ -1,0 +1,26 @@
+extends layouts/layout-primary
+
+block content
+  include layouts/general/header
+  section.product
+    .container
+      .row
+        .col-md-12
+          ul.flex.breadcrumbs
+            li: a(href="/laminas") Láminas
+            li Lámina Botánica
+          header.product--header
+            h1.title-l Lámina Botánica
+            h2.price $300 o 2 x $500
+          section.product--section
+            .product--description
+              p Impresión A4.
+              p Lámina con especies nativas y exóticas de argentina. Técnica: Rotring y coloración digital.
+            .product--images.flex.flex-column.flex-row-sm
+              a.glightbox.product--images_img(href='assets/images/laminas/botanica-1.jpg'): +img('laminas/botanica-1.jpg')
+              a.glightbox.product--images_img(href='assets/images/laminas/botanica-2.jpg'): +img('laminas/botanica-2.jpg')
+
+
+  include layouts/general/menu
+  .overlay
+
