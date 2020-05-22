@@ -1,0 +1,32 @@
+extends layouts/layout-primary
+block title
+  title Cactusauria - Taza Mariposas
+  meta(name='description', content='Taza de cerámica apta microondas de especies de plantas y mariposas nativas de Argentina')
+  meta(name='keywords', content='Taza Mariposas')
+
+block content
+  include layouts/general/header
+  section.product
+    .container
+      .row
+        .col-md-12
+          ul.flex.breadcrumbs
+            li: a(href="/tazas") Tazas
+            li Mariposas
+          header.product--header
+            h1.title-l Mariposas
+            h2.price $350 o 2 x $600
+          section.product--section
+            .product--description
+              p Taza de cerámica apta microondas.
+              p Especies de plantas y mariposas nativas de Argentina
+            .product--images.flex.flex-column.flex-row-sm.flex-wrap
+              a.glightbox.product--images_img(href='assets/images/tazas/mariposas-1.jpg'): +img('tazas/mariposas-1.jpg')
+              a.glightbox.product--images_img(href='assets/images/tazas/mariposas-2.jpg'): +img('tazas/mariposas-2.jpg')
+              a.glightbox.product--images_img(href='assets/images/tazas/mariposas-3.jpg'): +img('tazas/mariposas-3.jpg')
+              a.glightbox.product--images_img(href='assets/images/tazas/tazas.jpg'): +img('tazas/tazas.jpg')
+
+
+  include layouts/general/menu
+  .overlay
+

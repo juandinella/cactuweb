@@ -1,0 +1,30 @@
+extends layouts/layout-primary
+block title
+  title Cactusauria - Lámina Saturniidae
+  meta(name='description', content='Lámina con polillas de la familia saturniidae nativas de Argentina')
+  meta(name='keywords', content='Lámina Saturniidae')
+
+block content
+  include layouts/general/header
+  section.product
+    .container
+      .row
+        .col-md-12
+          ul.flex.breadcrumbs
+            li: a(href="/laminas") Láminas
+            li Saturniidae
+          header.product--header
+            h1.title-l Saturniidae
+            h2.price $300 o 2 x $500
+          section.product--section
+            .product--description
+              p Impresión A4.
+              p Lámina con polillas de la familia saturniidae nativas de Argentina. Tecnica: lapices acuarelables y Rotring
+            .product--images.flex.flex-column.flex-row-sm
+              a.glightbox.product--images_img(href='assets/images/laminas/saturniidae-1.jpg'): +img('laminas/saturniidae-1.jpg')
+              a.glightbox.product--images_img(href='assets/images/laminas/saturniidae-2.jpg'): +img('laminas/saturniidae-2.jpg')
+
+
+  include layouts/general/menu
+  .overlay
+

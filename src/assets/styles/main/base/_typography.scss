@@ -29,4 +29,8 @@ textarea {
   font-size: rem(18);
   line-height: 1.5;
   font-weight: $f-bold;
+
+  @include breakpoint(sm) {
+    font-size: rem(22);
+  }
 }

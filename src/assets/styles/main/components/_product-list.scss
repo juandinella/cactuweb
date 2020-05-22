@@ -27,13 +27,14 @@
 
     @include breakpoint(sm) {
       padding: 0 0 rem(55) rem(40);
+      margin-bottom: rem(15);
     }
 
     @include breakpoint(md) {
       display: grid;
       overflow: inherit;
       -webkit-mask-image: none;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
       grid-column-gap: rem(20);
       grid-row-gap: rem(20);
       padding: 0 rem(40) rem(40) rem(40);

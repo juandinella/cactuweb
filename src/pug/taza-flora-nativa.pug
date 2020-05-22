@@ -1,0 +1,30 @@
+extends layouts/layout-primary
+block title
+  title Cactusauria - Taza Flora Nativa
+  meta(name='description', content='Taza de cerámica apta microondas de especies de flora nativas de Argentina.')
+  meta(name='keywords', content='Taza Flora Nativa')
+
+block content
+  include layouts/general/header
+  section.product
+    .container
+      .row
+        .col-md-12
+          ul.flex.breadcrumbs
+            li: a(href="/tazas") Tazas
+            li Flora Nativa
+          header.product--header
+            h1.title-l Flora Nativa
+            h2.price $350 o 2 x $600
+          section.product--section
+            .product--description
+              p Taza de cerámica apta microondas.
+              p Especies de flora nativas de Argentina.
+            .product--images.flex.flex-column.flex-row-sm.flex-wrap
+              a.glightbox.product--images_img(href='assets/images/tazas/flora-nativa-1.jpg'): +img('tazas/flora-nativa-1.jpg')
+              a.glightbox.product--images_img(href='assets/images/tazas/flora-nativa-2.jpg'): +img('tazas/flora-nativa-2.jpg')
+
+
+  include layouts/general/menu
+  .overlay
+

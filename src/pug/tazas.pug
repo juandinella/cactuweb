@@ -1,0 +1,11 @@
+extends layouts/layout-primary
+block title
+  title Cactusauria - Tazas
+  meta(name='description', content='Tazas de flora y fauna')
+  meta(name='keywords', content='Tazas')
+
+block content
+  include layouts/general/header
+  include layouts/general/search
+  include layouts/tazas/filters
+  include layouts/home/tazas

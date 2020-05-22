@@ -1,0 +1,30 @@
+extends layouts/layout-primary
+block title
+  title Cactusauria - Lámina Weepinbell
+  meta(name='description', content='Ilustración de la anatomia del pokemon Weepinbell')
+  meta(name='keywords', content='Lámina Weepinbell')
+
+block content
+  include layouts/general/header
+  section.product
+    .container
+      .row
+        .col-md-12
+          ul.flex.breadcrumbs
+            li: a(href="/laminas") Láminas
+            li Weepinbell
+          header.product--header
+            h1.title-l Weepinbell
+            h2.price $300 o 2 x $500
+          section.product--section
+            .product--description
+              p Impresión A4.
+              p Ilustración de la anatomia del pokemon Weepinbell. Técnica: acuarela y Rotring
+            .product--images.flex.flex-column.flex-row-sm
+              a.glightbox.product--images_img(href='assets/images/laminas/weepinbell-1.jpg'): +img('laminas/weepinbell-1.jpg')
+              a.glightbox.product--images_img(href='assets/images/laminas/weepinbell-2.jpg'): +img('laminas/weepinbell-2.jpg')
+
+
+  include layouts/general/menu
+  .overlay
+
