@@ -5,6 +5,8 @@ const productLightbox = () => {
     touchNavigation: true,
     loop: true
   });
+
+  lightbox()
 };
 
 export default productLightbox;

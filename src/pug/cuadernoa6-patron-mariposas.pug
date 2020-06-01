@@ -1,0 +1,28 @@
+extends layouts/layout-primary
+block title
+  title Cactusauria - Cuaderno A6 Patrón Mariposas
+  meta(name='description', content='Libreta tamaño A6 lisas tipo bookcel y tapas laminadas. Patrón con mariposas y plantas nativas de Argentina')
+  meta(name='keywords', content='libreta, patrón mariposas')
+
+block content
+  include layouts/general/header
+  section.product
+    .container
+      .row
+        .col-md-12
+          ul.flex.breadcrumbs
+            li: a(href="/cuadernosa6") Cuadernos A6
+            li Patrón Mariposas
+          header.product--header
+            h1.title-l Patrón Mariposas
+            h2.price $150
+          section.product--section
+            .product--description
+              p Libreta tamaño A6 (10x15cm aproximadamente), 40 hojas lisas tipo bookcel y tapas laminadas. Patrón con mariposas y plantas nativas de Argentina.
+            .product--images.flex.flex-column.flex-row-sm.flex-wrap
+              a.glightbox.product--images_img(href='assets/images/cuadernos/patron-mariposas-1.jpg'): +img('cuadernos/patron-mariposas-1.jpg')
+
+
+  include layouts/general/menu
+  .overlay
+

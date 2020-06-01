@@ -3,5 +3,6 @@ section.search
     .row
       .col-md-12
         form#search.relative.flex.align-center(action="")
-          input.search--input(type="search", placeholder='Buscar')
-          button.search--button.absolute.flex(type='submit'): +svg('search')
+          label.visuallyHidden(for="seach-input") Search
+          input.search--input#seach-input(type="search", placeholder='Buscar', name='seach-input')
+          button.search--button.absolute.flex(type='submit', aria-label='Search'): +svg('search')
