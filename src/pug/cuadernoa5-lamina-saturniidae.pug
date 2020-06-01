@@ -1,0 +1,29 @@
+extends layouts/layout-primary
+block title
+  title Cactusauria - Cuaderno A5 Lámina Saturniidae
+  meta(name='description', content='Libreta tamaño A6 lisas tipo bookcel y tapas laminadas. Lámina con polillas de la familia saturniidae nativas de Argentina con sus respectivos nombres en la contratapa. Tecnica: lapices acuarelables y Rotring.')
+  meta(name='keywords', content='libreta, lámina Saturniidae')
+
+block content
+  include layouts/general/header
+  section.product
+    .container
+      .row
+        .col-md-12
+          ul.flex.breadcrumbs
+            li: a(href="/cuadernosa5") Cuadernos A5
+            li Lámina Saturniidae
+          header.product--header
+            h1.title-l Lámina Saturniidae
+            h2.price $220
+          section.product--section
+            .product--description
+              p Libreta tamaño A5 (15x20 aproximadamente), 40 hojas lisas tipo bookcel y tapas laminadas. Lámina con polillas de la familia saturniidae nativas de Argentina con sus respectivos nombres en la contratapa. Tecnica: lapices acuarelables y Rotring.
+            .product--images.flex.flex-column.flex-row-sm.flex-wrap
+              a.glightbox.product--images_img(href='assets/images/cuadernos/lamina-saturniidae-1.jpg'): +img('cuadernos/lamina-saturniidae-1.jpg')
+              a.glightbox.product--images_img(href='assets/images/cuadernos/lamina-saturniidae-2.jpg'): +img('cuadernos/lamina-saturniidae-2.jpg')
+
+
+  include layouts/general/menu
+  .overlay
+
