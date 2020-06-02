@@ -9,10 +9,8 @@ const general = () => {
   if (document.querySelector('.search')) {
     search();
   }
-
   accordion()
   limitItems()
-
   asyncFonts({
     href: 'assets/css/fonts.css',
     observer: 'avenir',
