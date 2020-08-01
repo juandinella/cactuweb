@@ -1,6 +1,7 @@
 const gulp = require('gulp')
 const config = require('../config')
 const del = require('del')
+const webp = require('gulp-webp');
 
 gulp.task('clean', () =>
   del([
@@ -10,6 +11,7 @@ gulp.task('clean', () =>
 
 gulp.task('images', () =>
   gulp.src(config.directories.src.images + '/**/*')
+    .pipe(webp())
     .pipe(gulp.dest(config.directories.dist.images))
 )
 
