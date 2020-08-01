@@ -19,18 +19,20 @@
     "@juandinella/penny-pipes": "*",
     "@juandinella/penny-scripts": "*",
     "cheerio": "^1.0.0-rc.3",
+    "critical": "^1.3.9",
     "del": "^5.1.0",
     "fontfaceobserver": "^2.1.0",
     "glightbox": "^2.0.5",
     "gulp": "^4.0.2",
     "gulp-zip": "^5.0.1",
-    "lazysizes": "^5.2.0",
-    "yargs": "^15.0.2"
+    "lazysizes": "^5.2.2",
+    "netlify-cli": "^2.52.0",
+    "yargs": "^15.3.1"
   },
   "devDependencies": {
     "@juandinella/stylelint-config": "*",
     "browser-sync": "^2.26.7",
-    "react-dev-utils": "^10.0.0",
+    "react-dev-utils": "^10.2.1",
     "stylelint": "^12.0.1"
   },
   "stylelint": {
