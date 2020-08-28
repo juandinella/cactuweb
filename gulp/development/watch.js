@@ -10,6 +10,7 @@ const reload = done => {
 gulp.task('watch', done => {
   // static files
   gulp.watch(config.directories.src.markup + '/**/*.pug', gulp.series('markup', reload))
+  gulp.watch(config.directories.src.laminas + '/**/*.pug', gulp.series('laminas', reload))
   gulp.watch(config.directories.src.icons + '/**/*.svg', gulp.series('markup', reload))
   gulp.watch(config.directories.src.images + '/**/*', gulp.series('images', reload))
   gulp.watch(config.directories.src.base + '/assets/head/**/*', gulp.series('head', reload))
