@@ -36,3 +36,13 @@ a {
   position: absolute;
   width: 1px;
 }
+
+.hidden-class {
+  .is-visible,
+  .is-open,
+  .is-selected,
+  .is-hidden,
+  .is-block {
+    display: none;
+  }
+}

@@ -11,6 +11,11 @@ gulp.task('clean', () =>
 
 gulp.task('images', () =>
   gulp.src(config.directories.src.images + '/**/*')
+    .pipe(gulp.dest(config.directories.dist.images))
+)
+
+gulp.task('webp', () =>
+  gulp.src(config.directories.src.images + '/**/*')
     .pipe(webp())
     .pipe(gulp.dest(config.directories.dist.images))
 )

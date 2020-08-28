@@ -11,17 +11,18 @@ block content
       .row
         .col-md-12
           ul.flex.breadcrumbs
+            li: a(href="/") Inicio
             li: a(href="/laminas") Láminas
             li Iberá
           header.product--header
             h1.title-l Iberá
-            h2.price $300 o 2 x $500
+            h2.price !{precioTazas} o 2 x !{precioLaminasCombo}
           section.product--section
             .product--description
               p Lámina A4, Impresión 20x20. Especies emblemáticas del Esteros de Iberá: yaguareté, tapir, lobo gargantilla, oso hormiguero, guacamayo, muitú, venado de las pampas, pecarí y flora de la zona. Técnica: actuarela
             .product--images.flex.flex-column.flex-row-sm
-              a.glightbox.product--images_img(href='assets/images/laminas/ibera-1.webp'): +img('laminas/ibera-1.webp')
-              a.glightbox.product--images_img(href='assets/images/laminas/ibera-2.webp'): +img('laminas/ibera-2.webp')
+              a.glightbox.product--images_img(href='assets/images/laminas/ibera-1.jpg'): +img('laminas/ibera-1')
+              a.glightbox.product--images_img(href='assets/images/laminas/ibera-2.jpg'): +img('laminas/ibera-2')
 
 
   include layouts/general/menu

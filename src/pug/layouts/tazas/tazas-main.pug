@@ -4,9 +4,6 @@ section.product-list
       .col-md-12
         header.product-list--header.flex.align-center.justify-between
           h2.title-m Tazas
-          a.ver-todos.dn.flex-sm.align-center.justify-center(href="/tazas", title='ver todos')
-            span Ver todos
-            +svg('chevron-right')
   .product-list--container
     section.product-list--section.flex
       +card('Bombé Flora nativa', precioTazasBombe, '/taza-bombe-flora-nativa', '/tazas/bombe-flora-nativa-thumb', {'class':'caca'})
@@ -14,6 +11,5 @@ section.product-list
 
       +card('Recta Flora nativa', precioTazas, '/taza-flora-nativa', 'tazas/flora-nativa-thumb', {'class':'flora'})
       +card('Recta Mariposas', precioTazas, '/taza-mariposas', '/tazas/mariposas-thumb', {'class':'mariposas'})
-      .flex.dn-sm
-        +card('Recta Hongos', precioTazas, '/taza-hongos', '/tazas/hongos-thumb', {'class':'fauna'})
-        +card('Recta Geológica', precioTazas, '/taza-geologica', '/tazas/geologica-thumb', {'class':'caca'})
+      +card('Recta Hongos', precioTazas, '/taza-hongos', '/tazas/hongos-thumb', {'class':'fauna'})
+      +card('Recta Geológica', precioTazas, '/taza-geologica', '/tazas/geologica-thumb', {'class':'caca'})

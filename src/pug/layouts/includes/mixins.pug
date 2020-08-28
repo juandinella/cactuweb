@@ -2,12 +2,32 @@ mixin svg(filename)
   !=icon(filename)
 
 mixin img(name, alt)
+  picture
+    source(srcset=`assets/images/${name}.webp`, type='image/webp')
+    source(srcset=`assets/images/${name}.jpg`, type='image/jpeg')
+    img(src=`assets/images/${name}` alt= alt ? alt : 'An image')
+
+//- mixin img(name, alt)
   img(src=`assets/images/${name}` alt= alt ? alt : 'An image')
 
 mixin card(title, price, href, image, filter)
   a.card&attributes(filter)(href=href)
     .card--inside
-      .card--bg(style="background-image: url(assets/images/"+image+")")
+      .card--bg(style="background-image: url(assets/images/"+image+".jpg)")
       .card--content.flex.align-center.justify-between
         h4.card--title=title
         h5.card--price=price
+
+
+- var precioLaminas = "$400";
+- var precioLaminasCombo = "$600";
+
+- var precioTazas = "$400";
+- var precioTazasBombe = "$420";
+
+- var precioCuadernosA6 = "$170";
+
+- var precioCuadernosA5 = "$270";
+
+
+- var precioPrendedores = "$150"

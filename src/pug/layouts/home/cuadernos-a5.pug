@@ -4,11 +4,8 @@ section.product-list
       .col-md-12
         header.product-list--header.flex.align-center.justify-between
           h2.title-m Cuadernos A5
-          //- a.ver-todos.dn.flex-sm.align-center.justify-center(href="/cuadernos-a6", title='Cuadernos A6')
-            span Ver todos
-            +svg('chevron-right')
   .product-list--container
     section.product-list--section.flex
-      +card('Lámina Botánica', '$220', '/cuadernoa5-lamina-botanica', 'cuadernos/lamina-botanica-thumb.webp', {'class':'flora'})
-      +card('Lámina Mariposas Argentinas', '$220', '/cuadernoa5-lamina-mariposas-argentinas', 'cuadernos/lamina-mariposas-argentinas-thumb.webp', {'class':'flora'})
-      +card('Lámina Saturniidae', '$220', '/cuadernoa5-lamina-saturniidae', 'cuadernos/lamina-saturniidae-thumb.webp', {'class':'flora'})
+      +card('Lámina Botánica', precioCuadernosA5, '/cuadernoa5-lamina-botanica', 'cuadernos/lamina-botanica-thumb', {'class':'flora'})
+      +card('Lámina Mariposas Argentinas', precioCuadernosA5, '/cuadernoa5-lamina-mariposas-argentinas', 'cuadernos/lamina-mariposas-argentinas-thumb', {'class':'flora'})
+      +card('Lámina Saturniidae', precioCuadernosA5, '/cuadernoa5-lamina-saturniidae', 'cuadernos/lamina-saturniidae-thumb', {'class':'flora'})

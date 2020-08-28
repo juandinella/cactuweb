@@ -11,20 +11,21 @@ block content
       .row
         .col-md-12
           ul.flex.breadcrumbs
+            li: a(href="/") Inicio
             li: a(href="/tazas") Tazas
             li Mariposas
           header.product--header
             h1.title-l Mariposas
-            h2.price $350 o 2 x $600
+            h2.price !{precioTazas}
           section.product--section
             .product--description
               p Taza de cerámica apta microondas.
               p Especies de plantas y mariposas nativas de Argentina
             .product--images.flex.flex-column.flex-row-sm.flex-wrap
-              a.glightbox.product--images_img(href='assets/images/tazas/mariposas-1.webp'): +img('tazas/mariposas-1.webp')
-              a.glightbox.product--images_img(href='assets/images/tazas/mariposas-2.webp'): +img('tazas/mariposas-2.webp')
-              a.glightbox.product--images_img(href='assets/images/tazas/mariposas-3.webp'): +img('tazas/mariposas-3.webp')
-              a.glightbox.product--images_img(href='assets/images/tazas/tazas.webp'): +img('tazas/tazas.webp')
+              a.glightbox.product--images_img(href='assets/images/tazas/mariposas-1.jpg'): +img('tazas/mariposas-1')
+              a.glightbox.product--images_img(href='assets/images/tazas/mariposas-2.jpg'): +img('tazas/mariposas-2')
+              a.glightbox.product--images_img(href='assets/images/tazas/mariposas-3.jpg'): +img('tazas/mariposas-3')
+              a.glightbox.product--images_img(href='assets/images/tazas/tazas.jpg'): +img('tazas/tazas')
 
 
   include layouts/general/menu

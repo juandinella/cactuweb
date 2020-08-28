@@ -11,16 +11,17 @@ block content
       .row
         .col-md-12
           ul.flex.breadcrumbs
+            li: a(href="/") Inicio
             li: a(href="/cuadernosa6") Cuadernos A6
             li Yungas
           header.product--header
             h1.title-l Yungas
-            h2.price $150
+            h2.price !{precioCuadernosA6}
           section.product--section
             .product--description
               p Libreta tamaño A6 (10x15cm aproximadamente), 40 hojas lisas tipo bookcel y tapas laminadas. Ilustración con plantas y animales de la ecorregión Yungas.
             .product--images.flex.flex-column.flex-row-sm.flex-wrap
-              a.glightbox.product--images_img(href='assets/images/cuadernos/yunga-1.webp'): +img('cuadernos/yunga-1.webp')
+              a.glightbox.product--images_img(href='assets/images/cuadernos/yunga-1.jpg'): +img('cuadernos/yunga-1')
 
 
   include layouts/general/menu

@@ -6,13 +6,17 @@
     position: relative;
     font-size: rem(14);
 
-    &:first-of-type {
+    &:after {
+      content: "/";
+      position: absolute;
+      right: 0;
+      top: rem(2);
+      color: $color-primary;
+    }
+
+    &:last-of-type {
       &:after {
-        content: "/";
-        position: absolute;
-        right: 0;
-        top: rem(2);
-        color: $color-primary;
+        content: "";
       }
     }
 

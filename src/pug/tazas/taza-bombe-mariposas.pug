@@ -1,0 +1,32 @@
+extends layouts/layout-primary
+block title
+  title Cactusauria - Taza Bombé Mariposas
+  meta(name='description', content='Taza de cerámica sublimada de especies de plantas y mariposas nativas de Argentina')
+  meta(name='keywords', content='Taza Flora Nativa')
+
+block content
+  include layouts/general/header
+  section.product
+    .container
+      .row
+        .col-md-12
+          ul.flex.breadcrumbs
+            li: a(href="/") Inicio
+            li: a(href="/tazas") Tazas
+            li Bombé Mariposas
+          header.product--header
+            h1.title-l Bombé Mariposas
+            h2.price !{precioTazasBombe}
+          section.product--section
+            .product--description
+              p Taza de cerámica sublimada.
+              p Especies de flora nativas de Argentina.
+            .product--images.flex.flex-column.flex-row-sm.flex-wrap
+              a.glightbox.product--images_img(href='assets/images/tazas/bombe-mariposas-1.jpg'): +img('tazas/bombe-mariposas-1')
+              a.glightbox.product--images_img(href='assets/images/tazas/bombe-mariposas-2.jpg'): +img('tazas/bombe-mariposas-2')
+              a.glightbox.product--images_img(href='assets/images/tazas/bombe-mariposas-3.jpg'): +img('tazas/bombe-flora-nativa-3')
+
+
+  include layouts/general/menu
+  .overlay
+

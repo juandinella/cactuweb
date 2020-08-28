@@ -11,18 +11,19 @@ block content
       .row
         .col-md-12
           ul.flex.breadcrumbs
+            li: a(href="/") Inicio
             li: a(href="/laminas") Láminas
             li Mariposas Argentinas
           header.product--header
             h1.title-l Mariposas Argentinas
-            h2.price $300 o 2 x $500
+            h2.price !{precioTazas} o 2 x !{precioLaminasCombo}
           section.product--section
             .product--description
               p Impresión A4.
               p Lámina con mariposas nativas de Argentina. Técnica: digital
             .product--images.flex.flex-column.flex-row-sm
-              a.glightbox.product--images_img(href='assets/images/laminas/mariposas-argentinas-1.webp'): +img('laminas/mariposas-argentinas-1.webp')
-              a.glightbox.product--images_img(href='assets/images/laminas/mariposas-argentinas-2.webp'): +img('laminas/mariposas-argentinas-2.webp')
+              a.glightbox.product--images_img(href='assets/images/laminas/mariposas-argentinas-1.jpg'): +img('laminas/mariposas-argentinas-1')
+              a.glightbox.product--images_img(href='assets/images/laminas/mariposas-argentinas-2.jpg'): +img('laminas/mariposas-argentinas-2')
 
 
   include layouts/general/menu

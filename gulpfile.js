@@ -13,7 +13,8 @@ const development = [
 const production = [
   'minifyStyles',
   'purge',
-  'styles-production', 'zip',
+  'styles-production',
+  'minification',
   'critical'
 ]
 
@@ -25,16 +26,17 @@ prod
 const prodTasks = [
   'minifyStyles',
   'purge',
-  'zip',
+  'minification',
   'critical'
 ]
 
 let tasks = [
   'clean',
   config.production ? 'styles:prod' : 'styles',
-  'images', 'head',
-  'scripts', 'fonts',
-  'markup',
+  'images', 'webp',
+  'head', 'scripts',
+  'fonts', 'markup',
+  'laminas',
   prod && [...prodTasks]
 ]
 
@@ -42,7 +44,7 @@ const filteredTasks = tasks.filter(task => !!task)
 gulp.task('build', gulp.series(...filteredTasks))
 
 if (prod) {
-  gulp.task('release', gulp.series('build', 'zip'))
+  gulp.task('release', gulp.series('build'))
 } else {
   gulp.task('serve', gulp.parallel('browser-sync', 'watch'))
   gulp.task('default', gulp.series('build', 'serve'))

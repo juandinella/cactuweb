@@ -11,17 +11,18 @@ block content
       .row
         .col-md-12
           ul.flex.breadcrumbs
+            li: a(href="/") Inicio
             li: a(href="/cuadernosa5") Cuadernos A5
             li Lámina Mariposas Argentinas
           header.product--header
             h1.title-l Lámina Mariposas Argentinas
-            h2.price $220
+            h2.price !{precioCuadernosA5}
           section.product--section
             .product--description
               p Libreta tamaño A5 (15x20 aproximadamente), 40 hojas lisas tipo bookcel y tapas laminadas. Lámina con mariposas nativas de Argentina con sus respectivos nombres en la contratapa. Técnica: digital.
             .product--images.flex.flex-column.flex-row-sm.flex-wrap
-              a.glightbox.product--images_img(href='assets/images/cuadernos/lamina-mariposas-argentinas-1.webp'): +img('cuadernos/lamina-mariposas-argentinas-1.webp')
-              a.glightbox.product--images_img(href='assets/images/cuadernos/lamina-mariposas-argentinas-2.webp'): +img('cuadernos/lamina-mariposas-argentinas-2.webp')
+              a.glightbox.product--images_img(href='assets/images/cuadernos/lamina-mariposas-argentinas-1.jpg'): +img('cuadernos/lamina-mariposas-argentinas-1')
+              a.glightbox.product--images_img(href='assets/images/cuadernos/lamina-mariposas-argentinas-2.jpg'): +img('cuadernos/lamina-mariposas-argentinas-2')
 
 
   include layouts/general/menu

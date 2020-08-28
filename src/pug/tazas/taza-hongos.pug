@@ -11,17 +11,18 @@ block content
       .row
         .col-md-12
           ul.flex.breadcrumbs
+            li: a(href="/") Inicio
             li: a(href="/tazas") Tazas
             li Hongos
           header.product--header
             h1.title-l Hongos
-            h2.price $350 o 2 x $600
+            h2.price !{precioTazas}
           section.product--section
             .product--description
               p Taza de cerámica apta microondas.
             .product--images.flex.flex-column.flex-row-sm.flex-wrap
-              a.glightbox.product--images_img(href='assets/images/tazas/hongos-1.webp'): +img('tazas/hongos-1.webp')
-              a.glightbox.product--images_img(href='assets/images/tazas/hongos-2.webp'): +img('tazas/hongos-2.webp')
+              a.glightbox.product--images_img(href='assets/images/tazas/hongos-1.jpg'): +img('tazas/hongos-1')
+              a.glightbox.product--images_img(href='assets/images/tazas/hongos-2.jpg'): +img('tazas/hongos-2')
 
 
   include layouts/general/menu

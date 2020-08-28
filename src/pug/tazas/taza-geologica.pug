@@ -11,17 +11,18 @@ block content
       .row
         .col-md-12
           ul.flex.breadcrumbs
+            li: a(href="/") Inicio
             li: a(href="/tazas") Tazas
             li Geológica
           header.product--header
             h1.title-l Geológica
-            h2.price $350 o 2 x $600
+            h2.price !{precioTazas}
           section.product--section
             .product--description
               p Taza de cerámica apta microondas.
             .product--images.flex.flex-column.flex-row-sm.flex-wrap
-              a.glightbox.product--images_img(href='assets/images/tazas/geologica-1.webp'): +img('tazas/geologica-1.webp')
-              a.glightbox.product--images_img(href='assets/images/tazas/geologica-2.webp'): +img('tazas/geologica-2.webp')
+              a.glightbox.product--images_img(href='assets/images/tazas/geologica-1.jpg'): +img('tazas/geologica-1')
+              a.glightbox.product--images_img(href='assets/images/tazas/geologica-2.jpg'): +img('tazas/geologica-2')
 
 
   include layouts/general/menu

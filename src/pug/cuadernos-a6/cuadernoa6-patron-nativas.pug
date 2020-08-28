@@ -11,16 +11,17 @@ block content
       .row
         .col-md-12
           ul.flex.breadcrumbs
+            li: a(href="/") Inicio
             li: a(href="/cuadernosa6") Cuadernos A6
             li Patrón Nativas
           header.product--header
             h1.title-l Patrón Nativas
-            h2.price $150
+            h2.price !{precioCuadernosA6}
           section.product--section
             .product--description
               p Libreta tamaño A6 (10x15cm aproximadamente), 40 hojas lisas tipo bookcel y tapas laminadas. Patrón de flora nativa
             .product--images.flex.flex-column.flex-row-sm.flex-wrap
-              a.glightbox.product--images_img(href='assets/images/cuadernos/patron-nativas-1.webp'): +img('cuadernos/patron-nativas-1.webp')
+              a.glightbox.product--images_img(href='assets/images/cuadernos/patron-nativas-1.jpg'): +img('cuadernos/patron-nativas-1')
 
 
   include layouts/general/menu

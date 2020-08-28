@@ -4,32 +4,15 @@ section.product-list
       .col-md-12
         header.product-list--header.flex.align-center.justify-between
           h2.title-m Prendedores e imanes
-          a.ver-todos.flex.align-center.justify-center(href="/prendedores-imanes", title='ver todos')
+          a.ver-todos.dn.flex-sm.align-center.justify-center(href="/prendedores-imanes", title='ver todos')
             span Ver todos
             +svg('chevron-right')
   .product-list--container
     section.product-list--section.flex
-      +card('Prendedor 1', '150', '/lamina-1', 'img.webp', {'class':'alf'})
-      +card('Prendedor 2', '150', '/lamina-1', 'img.webp', {'class':'culo'})
-      +card('Prendedor 3', '150', '/lamina-1', 'img.webp', {'class':'caca'})
-      +card('Prendedor 4', '150', '/lamina-1', 'img.webp', {'class':'caca'})
-      +card('Prendedor 5', '150', '/lamina-1', 'img.webp', {'class':'culo'})
-      +card('Prendedor 6', '150', '/lamina-1', 'img.webp', {'class':'caca'})
-      +card('Imán 1', '150', '/lamina-1', 'img.webp', {'class':'caca'})
-      +card('Imán 2', '150', '/lamina-1', 'img.webp', {'class':'culo'})
-      +card('Imán 3', '150', '/lamina-1', 'img.webp', {'class':'caca'})
-      +card('Imán 4', '150', '/lamina-1', 'img.webp', {'class':'caca'})
-      +card('Imán 5', '150', '/lamina-1', 'img.webp', {'class':'culo'})
-      +card('Imán 6', '150', '/lamina-1', 'img.webp', {'class':'caca'})
-      +card('Prendedor 1', '150', '/lamina-1', 'img.webp', {'class':'caca'})
-      +card('Prendedor 2', '150', '/lamina-1', 'img.webp', {'class':'culo'})
-      +card('Prendedor 3', '150', '/lamina-1', 'img.webp', {'class':'caca'})
-      +card('Prendedor 4', '150', '/lamina-1', 'img.webp', {'class':'caca'})
-      +card('Prendedor 5', '150', '/lamina-1', 'img.webp', {'class':'culo'})
-      +card('Prendedor 6', '150', '/lamina-1', 'img.webp', {'class':'caca'})
-      +card('Imán 1', '150', '/lamina-1', 'img.webp', {'class':'alf'})
-      +card('Imán 2', '150', '/lamina-1', 'img.webp', {'class':'culo'})
-      +card('Imán 3', '150', '/lamina-1', 'img.webp', {'class':'caca'})
-      +card('Imán 4', '150', '/lamina-1', 'img.webp', {'class':'alf'})
-      +card('Imán 5', '150', '/lamina-1', 'img.webp', {'class':'culo'})
-      +card('Imán 6', '150', '/lamina-1', 'img.webp', {'class':'caca'})
+      +card('Botánica', precioPrendedores, '/lamina-botanica', 'laminas/botanica-thumb', {'class':'flora'})
+      +card('Mariposas Argentinas', precioPrendedores, '/lamina-mariposas-argentinas', '/laminas/mariposas-argentinas-thumb', {'class':'fauna'})
+      +card('Saturniidae', precioPrendedores, '/lamina-saturniidae', '/laminas/saturniidae-thumb', {'class':'fauna'})
+      +card('Iberá', precioPrendedores, '/lamina-ibera', '/laminas/ibera-thumb', {'class':'caca'})
+      .flex.dn-sm
+        +card('Weepinbell', precioPrendedores, '/lamina-weepinbell', '/laminas/weepinbell-thumb', {'class':'pokemon'})
+        +card('Butterfree', precioPrendedores, '/lamina-butterfree', '/laminas/butterfree-thumb', {'class':'pokemon'})

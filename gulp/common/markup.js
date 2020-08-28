@@ -18,3 +18,18 @@ gulp.task('markup', () =>
     .on('error', config.onError)
     .pipe(gulp.dest(config.directories.dist.markup))
 )
+
+gulp.task('laminas', () =>
+  gulp.src(config.directories.src.laminas + '/*.pug')
+    .pipe(pug({
+      pug: {
+        basedir: config.directories.src.laminas,
+        locals: {
+          icon: name => fs.readFileSync(`./src/assets/icons/${name}.svg`),
+          production
+        }
+      }
+    })())
+    .on('error', config.onError)
+    .pipe(gulp.dest(config.directories.dist.laminas))
+)
