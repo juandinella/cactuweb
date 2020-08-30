@@ -1,11 +1,11 @@
-extends ../layouts/layout-secondary
+extends layouts/layout-primary
 block title
   title Cactusauria - Lámina Mariposas Argentinas
   meta(name='description', content='Lámina con mariposas nativas de Argentina.')
   meta(name='keywords', content='Lámina Mariposas nativas de Argentina')
 
 block content
-  include ../layouts/general/header
+  include layouts/general/header
   section.product
     .container
       .row
@@ -22,8 +22,8 @@ block content
               p Impresión A4.
               p Lámina con mariposas nativas de Argentina. Técnica: digital
             .product--images.flex.flex-column.flex-row-sm
-              a.glightbox.product--images_img(href='../assets/images/laminas/mariposas-argentinas-1.jpg'): +imgInside('laminas/mariposas-argentinas-1')
-              a.glightbox.product--images_img(href='../assets/images/laminas/mariposas-argentinas-2.jpg'): +imgInside('laminas/mariposas-argentinas-2')
+              a.glightbox.product--images_img(href='/laminas/mariposas-argentinas-1.jpg'): +img('laminas/mariposas-argentinas-1')
+              a.glightbox.product--images_img(href='/laminas/mariposas-argentinas-2.jpg'): +img('laminas/mariposas-argentinas-2')
 
   .overlay
 

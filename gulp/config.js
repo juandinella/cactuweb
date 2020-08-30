@@ -17,7 +17,6 @@ module.exports = {
     src: {
       base: 'src',
       markup: 'src/pug',
-      laminas: 'src/pug/laminas',
       fonts: 'src/assets/fonts',
       icons: 'src/assets/icons',
       images: 'src/assets/images',
@@ -27,7 +26,6 @@ module.exports = {
     dist: {
       base: 'dist',
       markup: 'dist',
-      laminas: 'dist/laminas',
       fonts: 'dist/assets/fonts',
       icons: 'dist/assets/icons',
       images: 'dist/assets/images',

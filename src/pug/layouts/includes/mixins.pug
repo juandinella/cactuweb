@@ -7,15 +7,6 @@ mixin img(name, alt)
     source(srcset=`assets/images/${name}.jpg`, type='image/jpeg')
     img(src=`assets/images/${name}` alt= alt ? alt : 'An image')
 
-mixin imgInside(name, alt)
-  picture
-    source(srcset=`../assets/images/${name}.webp`, type='image/webp')
-    source(srcset=`../assets/images/${name}.jpg`, type='image/jpeg')
-    img(src=`..//assets/images/${name}` alt= alt ? alt : 'An image')
-
-//- mixin img(name, alt)
-  img(src=`assets/images/${name}` alt= alt ? alt : 'An image')
-
 mixin card(title, price, href, image, filter)
   a.card&attributes(filter)(href=href)
     .card--inside
@@ -23,7 +14,6 @@ mixin card(title, price, href, image, filter)
       .card--content.flex.align-center.justify-between
         h4.card--title=title
         h5.card--price=price
-
 
 
 - var precioLaminas = "$400";

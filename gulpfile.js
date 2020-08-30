@@ -30,13 +30,12 @@ const prodTasks = [
   'critical'
 ]
 
-let tasks = [
+const tasks = [
   'clean',
   config.production ? 'styles:prod' : 'styles',
   'images', 'webp',
   'head', 'scripts',
   'fonts', 'markup',
-  'laminas',
   prod && [...prodTasks]
 ]
 
