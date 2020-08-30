@@ -5,7 +5,7 @@ const fs = require('fs')
 const pug = require('@juandinella/penny-pipes').pug;
 
 gulp.task('markup', () =>
-  gulp.src(config.directories.src.markup + '/*.pug')
+  gulp.src(config.directories.src.markup + '/**/*.pug')
     .pipe(pug({
       pug: {
         basedir: config.directories.src.markup,
