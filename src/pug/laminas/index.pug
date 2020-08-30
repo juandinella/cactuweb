@@ -1,7 +1,22 @@
-extends layouts/layout-primary
+extends ../layouts/layout-primary
 
 block content
-  include layouts/general/header
-  include layouts/general/search
-  include layouts/general/filters
-  h1 hola
+  include ../layouts/general/header
+  include ../layouts/general/search
+  include ../layouts/general/filters
+  section.product-list
+  .container
+    .row
+      .col-md-12
+        header.product-list--header.flex.align-center.justify-between
+          h2.title-m Láminas
+  .product-list--container
+    section.product-list--section.flex
+      +card('Botánica', precioLaminas, 'lamina-botanica', 'laminas/botanica-thumb', {'class':'flora'})
+      +card('Mariposas Argentinas', precioLaminas, 'lamina-mariposas-argentinas', 'laminas/mariposas-argentinas-thumb', {'class':'fauna'})
+      +card('Saturniidae', precioLaminas, 'lamina-saturniidae', 'laminas/saturniidae-thumb', {'class':'fauna'})
+      +card('Iberá', precioLaminas, 'lamina-ibera', '/laminas/ibera-thumb', {'class':'caca'})
+      .flex.dn-sm
+        +card('Weepinbell', precioLaminas, 'lamina-weepinbell', '/laminas/weepinbell-thumb', {'class':'pokemon'})
+        +card('Butterfree', precioLaminas, 'lamina-butterfree', '/laminas/butterfree-thumb', {'class':'pokemon'})
+
