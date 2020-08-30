@@ -1,11 +1,11 @@
-extends layouts/layout-primary
+extends ../../layouts/layout-primary
 block title
   title Cactusauria - Cuaderno A6 Patrón Nativas
   meta(name='description', content='Libreta tamaño A6 lisas tipo bookcel y tapas laminadas. Patrón de flora nativa')
   meta(name='keywords', content='libreta, flora nativa')
 
 block content
-  include layouts/general/header
+  include ../../layouts/general/header
   section.product
     .container
       .row
@@ -21,9 +21,9 @@ block content
             .product--description
               p Libreta tamaño A6 (10x15cm aproximadamente), 40 hojas lisas tipo bookcel y tapas laminadas. Patrón de flora nativa
             .product--images.flex.flex-column.flex-row-sm.flex-wrap
-              a.glightbox.product--images_img(href='assets/images/cuadernos/patron-nativas-1.jpg'): +img('cuadernos/patron-nativas-1')
+              a.glightbox.product--images_img(href='../assets/images/cuadernos/patron-nativas-1.jpg'): +img('cuadernos/patron-nativas-1')
 
 
-  include layouts/general/menu
+  include ../../layouts/general/menu
   .overlay
 

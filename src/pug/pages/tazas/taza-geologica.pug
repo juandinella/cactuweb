@@ -1,11 +1,11 @@
-extends layouts/layout-primary
+extends ../../layouts/layout-primary
 block title
   title Cactusauria - Taza Geológica
   meta(name='description', content='Taza de cerámica apta microondas de Geológica')
   meta(name='keywords', content='Taza Geológica')
 
 block content
-  include layouts/general/header
+  include ../../layouts/general/header
   section.product
     .container
       .row
@@ -21,10 +21,10 @@ block content
             .product--description
               p Taza de cerámica apta microondas.
             .product--images.flex.flex-column.flex-row-sm.flex-wrap
-              a.glightbox.product--images_img(href='assets/images/tazas/geologica-1.jpg'): +img('tazas/geologica-1')
-              a.glightbox.product--images_img(href='assets/images/tazas/geologica-2.jpg'): +img('tazas/geologica-2')
+              a.glightbox.product--images_img(href='../assets/images/tazas/geologica-1.jpg'): +img('tazas/geologica-1')
+              a.glightbox.product--images_img(href='../assets/images/tazas/geologica-2.jpg'): +img('tazas/geologica-2')
 
 
-  include layouts/general/menu
+  include ../../layouts/general/menu
   .overlay
 

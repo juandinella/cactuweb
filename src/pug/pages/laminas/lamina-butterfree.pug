@@ -1,11 +1,11 @@
-extends layouts/layout-primary
+extends ../../layouts/layout-primary
 block title
   title Cactusauria - Lámina Butterfree
   meta(name='description', content='Ilustración con la metamorfosis del pokemon Butterfree')
   meta(name='keywords', content='Lámina Butterfree')
 
 block content
-  include layouts/general/header
+  include ../../layouts/general/header
   section.product
     .container
       .row
@@ -22,10 +22,10 @@ block content
               p Impresión A4.
               p Ilustración con la metamorfosis del pokemon Butterfree. Técnica: acuarela.
             .product--images.flex.flex-column.flex-row-sm
-              a.glightbox.product--images_img(href='images/laminas/butterfree-1.jpg'): +img('laminas/butterfree-1')
-              a.glightbox.product--images_img(href='images/laminas/butterfree-2.jpg'): +img('laminas/butterfree-2')
+              a.glightbox.product--images_img(href='../assets/images/laminas/butterfree-1.jpg'): +img('laminas/butterfree-1')
+              a.glightbox.product--images_img(href='../assets/images/laminas/butterfree-2.jpg'): +img('laminas/butterfree-2')
 
 
-  include layouts/general/menu
+  include ../../layouts/general/menu
   .overlay
 

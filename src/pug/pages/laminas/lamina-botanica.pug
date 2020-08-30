@@ -1,18 +1,18 @@
-extends layouts/layout-primary
+extends ../../layouts/layout-primary
 block title
   title Cactusauria - Lámina Botánica
   meta(name='description', content='Lámina con especies nativas y exóticas de argentina')
   meta(name='keywords', content='Lámina Botánica')
 
 block content
-  include layouts/general/header
+  include ../../layouts/general/header
   section.product
     .container
       .row
         .col-md-12
           ul.flex.breadcrumbs
             li: a(href="/") Inicio
-            li: a(href="laminas") Láminas
+            li: a(href="/laminas") Láminas
             li Lámina Botánica
           header.product--header
             h1.title-l Lámina Botánica
@@ -22,8 +22,8 @@ block content
               p Impresión A4.
               p Lámina con especies nativas y exóticas de argentina. Técnica: Rotring y coloración digital.
             .product--images.flex.flex-column.flex-row-sm
-              a.glightbox.product--images_img(href='images/laminas/botanica-1.jpg'): +img('laminas/botanica-1')
-              a.glightbox.product--images_img(href='images/laminas/botanica-2.jpg'): +img('laminas/botanica-2')
+              a.glightbox.product--images_img(href='../assets/images/laminas/botanica-1.jpg'): +img('laminas/botanica-1')
+              a.glightbox.product--images_img(href='../assets/images/laminas/botanica-2.jpg'): +img('laminas/botanica-2')
 
   .overlay
 

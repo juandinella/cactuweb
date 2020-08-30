@@ -1,11 +1,11 @@
-extends layouts/layout-primary
+extends ../../layouts/layout-primary
 block title
   title Cactusauria - Lámina Butterfree
   meta(name='description', content='Ilustración con la metamorfosis del pokemon Butterfree')
   meta(name='keywords', content='Lámina Butterfree')
 
 block content
-  include layouts/general/header
+  include ../../layouts/general/header
   section.product
     .container
       .row
@@ -21,10 +21,10 @@ block content
             .product--description
               p Lámina A4, Impresión 20x20. Especies emblemáticas del Esteros de Iberá: yaguareté, tapir, lobo gargantilla, oso hormiguero, guacamayo, muitú, venado de las pampas, pecarí y flora de la zona. Técnica: actuarela
             .product--images.flex.flex-column.flex-row-sm
-              a.glightbox.product--images_img(href='images/laminas/ibera-1.jpg'): +img('laminas/ibera-1')
-              a.glightbox.product--images_img(href='images/laminas/ibera-2.jpg'): +img('laminas/ibera-2')
+              a.glightbox.product--images_img(href='../assets/images/laminas/ibera-1.jpg'): +img('laminas/ibera-1')
+              a.glightbox.product--images_img(href='../assets/images/laminas/ibera-2.jpg'): +img('laminas/ibera-2')
 
 
-  include layouts/general/menu
+  include ../../layouts/general/menu
   .overlay
 

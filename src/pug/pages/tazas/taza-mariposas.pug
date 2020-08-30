@@ -1,11 +1,11 @@
-extends layouts/layout-primary
+extends ../../layouts/layout-primary
 block title
   title Cactusauria - Taza Mariposas
   meta(name='description', content='Taza de cerámica apta microondas de especies de plantas y mariposas nativas de Argentina')
   meta(name='keywords', content='Taza Mariposas')
 
 block content
-  include layouts/general/header
+  include ../../layouts/general/header
   section.product
     .container
       .row
@@ -22,12 +22,12 @@ block content
               p Taza de cerámica apta microondas.
               p Especies de plantas y mariposas nativas de Argentina
             .product--images.flex.flex-column.flex-row-sm.flex-wrap
-              a.glightbox.product--images_img(href='assets/images/tazas/mariposas-1.jpg'): +img('tazas/mariposas-1')
-              a.glightbox.product--images_img(href='assets/images/tazas/mariposas-2.jpg'): +img('tazas/mariposas-2')
-              a.glightbox.product--images_img(href='assets/images/tazas/mariposas-3.jpg'): +img('tazas/mariposas-3')
-              a.glightbox.product--images_img(href='assets/images/tazas/tazas.jpg'): +img('tazas/tazas')
+              a.glightbox.product--images_img(href='../assets/images/tazas/mariposas-1.jpg'): +img('tazas/mariposas-1')
+              a.glightbox.product--images_img(href='../assets/images/tazas/mariposas-2.jpg'): +img('tazas/mariposas-2')
+              a.glightbox.product--images_img(href='../assets/images/tazas/mariposas-3.jpg'): +img('tazas/mariposas-3')
+              a.glightbox.product--images_img(href='../assets/images/tazas/tazas.jpg'): +img('tazas/tazas')
 
 
-  include layouts/general/menu
+  include ../../layouts/general/menu
   .overlay
 
