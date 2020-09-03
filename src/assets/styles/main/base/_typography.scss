@@ -21,7 +21,7 @@ textarea {
 }
 
 .title-l {
-  font-size: 24px;
+  font-size: rem(24);
   font-weight: $f-bold;
 }
 
@@ -33,4 +33,10 @@ textarea {
   @include breakpoint(sm) {
     font-size: rem(22);
   }
+}
+
+.title-s {
+  font-size: rem(16);
+  line-height: 1;
+  font-weight: $f-bold;
 }

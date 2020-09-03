@@ -10,6 +10,17 @@
     margin-bottom: rem(14);
   }
 
+  &--title {
+    padding: 0 rem(30);
+    margin-bottom: rem(12);
+
+    h3 {
+      background: #fcf9e8;
+      padding: rem(5);
+      border-radius: rem(2);
+    }
+  }
+
   &--section {
     display: flex;
     flex-grow: 1;
@@ -17,13 +28,7 @@
     margin-bottom: rem(-10);
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
-    -webkit-mask-image: linear-gradient(
-      90deg,
-      transparent,
-      #000 10px,
-      #000 calc(100% - 10px),
-      transparent
-    );
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 10px, #000 calc(100% - 10px), transparent);
 
     @include breakpoint(sm) {
       padding: 0 0 rem(55) rem(40);

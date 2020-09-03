@@ -1,5 +1,5 @@
 const limitItems = () => {
-  const productList = document.querySelectorAll('.product-list');
+  const productList = document.querySelectorAll('.limit-items');
 
   for (let i = 0; i < productList.length; i++) {
     const cards = productList[i].querySelectorAll('.card');
