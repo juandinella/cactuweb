@@ -1,0 +1,25 @@
+extends ../../../layouts/layout-primary
+block title
+  title Cactusauria - Prendedor/Imán Ciervo de los pantanos
+  meta(name='description', content='')
+  meta(name='keywords', content='')
+
+block content
+  include ../../../layouts/general/header
+  - var name = "Ciervo de los pantanos"
+  section.product
+    .container
+      .row
+        .col-md-12
+          ul.flex.breadcrumbs
+            li: a(href="/") Inicio
+            li: a(href="/prendedores-imanes") Prendedores e imanes
+            li !{name}
+          header.product--header
+            h1.title-l !{name}
+            h2.price !{precioPrendedores}
+          section.product--section
+            .product--description
+              p Texto
+            .product--images.flex.flex-column.flex-row-sm.flex-wrap
+              a.glightbox.product--images_img(href='../../assets/images/prendedores/ciervo-de-los-pantanos.jpg'): +img('prendedores/ciervo-de-los-pantanos')
